@@ -19,8 +19,8 @@ namespace NumLotto
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            if (!Page.IsPostBack)
+            Response.Redirect("GameOptions.aspx");
+            /* if (!Page.IsPostBack)
             {
                 LblMessage.Visible = false;
             }
@@ -30,7 +30,7 @@ namespace NumLotto
                 attempts = int.Parse(GetSessionValue("attempts"));
                 gameOver = int.Parse(GetSessionValue("gameOver"));
                 level = GetSessionValue("level");
-            }
+            } */
 
         }
 
